@@ -1,0 +1,46 @@
+.cover
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+     height: 20rem;
+     width: 100%;
+    background-color: var(--color-purple);
+    z-index: -18;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+
+.preview_navbar
+{
+    height: 4rem;
+    align-items: center;
+    padding: 0 20px;
+}
+.back-button
+{
+    border: 0.08rem solid var(--color-purple);
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+
+}
+.back-button a
+  {
+    
+    color: var(--color-purple);
+    font-weight: 600;
+}
+
+.shareLinks-button
+{
+    background-color: var(--color-purple);    
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.shareLinks-button .shareLink
+{
+    color: white;
+    margin: 0 1rem;
+}

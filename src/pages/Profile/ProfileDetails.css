@@ -1,0 +1,282 @@
+.react-select-container {
+    position: relative;
+    z-index: 1000;
+  }
+
+
+/* Phone Preview Start */
+
+.phone_preview
+{
+    margin-top: 40px;
+    flex: 48%;
+    max-width: 48%;
+    height: fit-content;
+    margin: auto;   
+    padding: 0;
+    background-color: #ffff;
+
+}
+
+.phone-image
+{
+    background-image: url('../../images//phone-rm.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 30px;
+    position: relative;
+    object-fit: cover;
+}
+
+
+.phone_preview .phone-desc
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    padding-top: 7rem;
+}
+.phone_preview .phone-desc .circle
+{
+    
+    background-color: rgb(237, 234, 234);
+    border: 5px solid var(--color-grey);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.phone_preview .phone-desc .circleImage
+{
+    
+    background-color: rgb(237, 234, 234);
+    border: 5px solid var(--color-purple);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.phone_preview .phone-desc .email
+{
+    color: var(--color-grey);
+}
+
+
+
+.phone_preview .addedLinks .btn 
+ {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 10px;
+    padding: 7px 70px;
+
+ }
+
+ .phone_preview .addedLinks .grpLink
+{
+    position: relative;
+} 
+ .addedLinks .arrowRight
+{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.5rem;
+    width: 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+ .phone_preview .addedLinks  .btn-github
+ {
+    background-color: var(--color-black);
+ }
+
+ .phone_preview .addedLinks  .btn-youtube
+ {
+    background-color: var(--color-red);
+ }
+
+ .phone_preview .addedLinks  .btn-linkedIn
+ {
+    background-color: var(--color-blue);
+ }
+
+
+ .phone_preview .addedLinks  .btn-facebook
+ {
+    background-color: var(--color-purple);
+ }
+
+ .phone_preview .addedLinks  .btn-instagram
+ {
+    background-color:  #e1306c;
+ }
+
+/* phone_preview End */
+
+
+  /* Customize Links Start */
+.links_preview
+{
+    margin: 30px 0;
+    width: 100%;
+}
+
+/* Profile Image Starts */
+.profile-details 
+{
+    margin: 0 2%;
+    background-color: #ffff;
+    flex: 48%;
+    max-width: 48%;
+    padding: 25px;
+    gap: 10px;
+}
+
+.profile-details .title p
+{
+    color: var(--color-grey);
+}
+.profile-image 
+{
+    position: relative;
+  gap: 10px;
+  background-color:  #EEEEEE;
+  padding: 10px 5px;
+  color: var(--color-grey);
+  font-size: 18px;
+}
+
+.profile-image .profile-picture-title
+{
+    
+}
+
+.profile-image .btn 
+{     
+    background-color: var(--color-purple);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 12px;
+    margin-right: 10px;
+}
+
+.profile-image .image-preview 
+{
+    position: relative;
+    box-sizing: border-box;
+    object-fit: contain;
+    margin-bottom: 0;
+    padding-bottom: 0;
+   
+}
+
+.profile-image .image-preview img 
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.image-container {
+    position: relative;
+    transition: linear 0.5s all ease-in-out;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+
+  .image-overlay {
+   
+    transition: opacity 0.3s; /* Transition for opacity change */
+    border-radius: 50%;
+}
+
+.image-container:hover .image-overlay {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+.image-container .change-picture {
+    opacity: 1;
+  }
+  
+  .change-picture {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: none;
+    align-items: center;
+  }
+  
+  .image-preview:hover .change-picture {
+    display: flex; 
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+  
+}
+  
+  .camera-icon {
+    margin-right: 4px;
+  }
+
+.image-desc
+  {
+    width: 200px;
+  }
+/* Profile Image End */
+
+/* Profile Info Starts */
+.profile-details 
+{
+    position: relative;
+    padding-bottom: 60px;
+}
+.profile-details .profile-info 
+{
+position: relative;
+gap: 10px;
+background-color:  #EEEEEE;
+padding: 10px 5px;
+color: var(--color-grey);
+font-size: 18px;
+}
+
+.profile-info .info  input
+{
+    border: none ;
+    outline: none;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.profile-info .info input:focus
+{
+    border:  2px solid var(--color-purple);
+}
+
+.profile-details .save
+{
+  position: absolute;
+  right: 30px;
+    background-color: var(--color-purple);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+}
+/* Profile Info Ends */

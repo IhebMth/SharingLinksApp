@@ -1,0 +1,121 @@
+
+    .profile_preview
+{
+    border-radius: 30px;
+    width: 20rem;
+    background-color: none;
+}
+
+
+/* Phone Preview Start */
+
+    .profile_preview
+{
+    margin-top: 40px;
+    flex: 48%;
+    max-width: 48%;
+    height: fit-content;
+    margin: auto;   
+    padding: 0;
+    background-color: #ffff;
+
+}
+
+.phone-background
+{
+    
+    height: fit-content;
+    padding-bottom: 3rem;
+    
+}
+
+
+    .profile_preview .phone-desc
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    padding-top: 2rem;
+}
+    .profile_preview .phone-desc .circle
+{
+    
+    background-color: rgb(237, 234, 234);
+    border: 1px solid var(--color-grey);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile_preview .phone-desc .circleImage
+{
+    
+    background-color: rgb(237, 234, 234);
+    border: 3px solid var(--color-purple);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+    .profile_preview .phone-desc .email
+{
+    color: var(--color-grey);
+}
+
+
+
+    .profile_preview .addedLinks .btn 
+ {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 10px;
+    padding: 7px 70px;
+
+ }
+
+    .profile_preview .addedLinks .grpLink
+{
+    position: relative;
+} 
+ .addedLinks .arrowRight
+{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.5rem;
+    width: 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+    .profile_preview .addedLinks  .btn-github
+ {
+    background-color: var(--color-black);
+ }
+
+    .profile_preview .addedLinks  .btn-youtube
+ {
+    background-color: var(--color-red);
+ }
+
+    .profile_preview .addedLinks  .btn-linkedIn
+ {
+    background-color: var(--color-blue);
+ }
+
+
+    .profile_preview .addedLinks  .btn-facebook
+ {
+    background-color: var(--color-purple);
+ }
+
+    .profile_preview .addedLinks  .btn-instagram
+ {
+    background-color:  #e1306c;
+ }
+
+/* profile_preview End */
