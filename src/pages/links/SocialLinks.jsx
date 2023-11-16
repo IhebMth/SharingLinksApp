@@ -125,40 +125,44 @@ const SocialLinks = () => {
       <div className="links_preview d-flex align-items-center mt-40">
       <div className="phone_preview">
           <div className="phone-image">
-            <div className="phone-desc">
-            <div className="circle">
-                {showSavedData && (
-                  <img
-                    src={profilImage}
-                    className="circleImage"
-                    alt={`${profilImage ? "Profile Image" : ""}`}
-                  />
-                )}
-              </div>
-              <div className="fullName mt-2 mx-2">{firstName} {lastName} </div>
-              <div className="email mt-2">{email}</div>
+            {/* ... */}
+<div className="phone-desc">
+  <div className="circle">
+    {showSavedData && (
+      <img
+        src={profilImage}
+        className="circleImage"
+        alt={`${profilImage ? "Profile Image" : ""}`}
+      />
+    )}
+  </div>
+  <div className="fullName mt-2 mx-2">{firstName} {lastName}</div>
+  <div className="email mt-2">{email}</div>
 
-              <div className="mt-4 ">
-                {showLinks &&  ( 
-                links.map((link, index) => (
-                  <div
-                    key={index}
-                    className="addedLinks d-flex flex-column gap-3 mb-2"
-                  >
-                    <div className="grpLink d-flex justify-content-between">
-                      <div className={`btn btn-${link.platform}`}>
-                        {iconMappings[link.platform]} {link.platform}
-                      </div>
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        className="arrowRight fs-6"
-                        onClick={() => handleArrowUrl(link.platform)}
-                      />
-                    </div>
-                  </div>
-                )))}
-              </div>
+  <div className="mt-4 links-container">
+    {showLinks && (
+      links.map((link, index) => (
+        <div
+          key={index}
+          className="addedLinks d-flex flex-column gap-3 mb-2"
+        >
+          <div className="grpLink d-flex justify-content-between">
+            <div className={`btn btn-${link.platform}`}>
+              {iconMappings[link.platform]} {link.platform}
             </div>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className="arrowRight fs-6"
+              onClick={() => handleArrowUrl(link.platform)}
+            />
+          </div>
+        </div>
+      ))
+    )}
+  </div>
+</div>
+{/* ... */}
+
           </div>
         </div>
 
